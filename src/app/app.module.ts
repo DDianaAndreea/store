@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+
 import {MatSidenavModule} from '@angular/material/sidenav'
 import {MatGridListModule} from '@angular/material/grid-list'
 import {MatButtonModule} from '@angular/material/button'
@@ -28,6 +30,7 @@ import { ProductsHeaderComponent } from './pages/home/components/products-header
     ProductsHeaderComponent
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
